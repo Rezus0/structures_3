@@ -3,6 +3,7 @@ package org.example;
 import org.example.binarySearchTree.BinarySearchTree;
 import org.example.binarySearchTree.ExpressionTree;
 import org.example.binaryTree.BinaryTree;
+import org.example.binaryTree.TreePrinter;
 
 import java.util.Scanner;
 
@@ -37,7 +38,10 @@ public class Main {
         System.out.println(tree.asIndentedPreOrder(0));
         System.out.println(tree.bfs());
         System.out.println(tree.dfs());
+        TreePrinter.print(tree);
     }
+
+
 
     private static void binarySearchTreeTest() {
         BinarySearchTree<Integer> bst = new BinarySearchTree<>(null);
